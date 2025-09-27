@@ -111,12 +111,13 @@ main {
 }
 
 .add-btn {
-    padding: 10px;
+    padding: 15px;
     background-color: var(--Green500);
-    border-radius: 5px;
+    border-radius: 10px;
     color: var(--White);
     font-size: 1rem;
     font-family: Montserrat-Medium;
+    border: none;
 }
 
 .add-btn:hover {
@@ -126,4 +127,39 @@ main {
 .add-btn:active {
     background-color: var(--Green700);
     cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    main {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 350px;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .product-info-container {
+        width: 100%;
+        height: 80%;
+    }
+
+    .product-desc-container h1 {
+        
+        font-size: 2rem;
+        
+    }
 }
